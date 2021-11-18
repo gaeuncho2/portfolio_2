@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+@media screen and (min-width:801px) and (max-width:1064px) {
+
+    #menuNow{
+        display:none;
+    }
+
+    .goTop{
+        bottom:50px;
+        right:50px
+    }
+    .introAni{
+        display: none;
+    }
+
+    #header .logo h1{
+        font-size:32px;
+    }
+    #header .depth {
+        margin-top:20px;
+    }
+    #header.on .member{
+        display:none;
+    }
+    /* 햄버거버튼 추가 */
+    .open{ 
+        position:fixed;
+        top:30px;
+        right:50px; 
+        z-index:999;
+        width:50px;
+        height:50px;
+        font-size:25px;
+        color:#000; 
+        text-align:center;
+        line-height:50px; 
+        cursor:pointer;
+        z-index:99999; 
+    }
+    .open .bar { 
+        height:4px; 
+        background-color:#000;
+        border-radius:2px;
+        position:absolute; 
+        transition:all 0.3s; 
+    }
+    .open .bar1 { 
+        top:12px; 
+        width:30px; 
+        left:10px 
+    }
+    .open .bar2 { 
+        top:50%; 
+        margin-top:-2px; 
+        width:30px; 
+        left:10px 
+    }
+    .open .bar3 { 
+        bottom:12px; 
+        width:30px; 
+        left:10px;
+    }    
+    .open.on .bar1 { 
+        transform:translateX(4px) rotate(45deg);
+        transform-origin:0% 50%; 
+    }
+    .open.on .bar2 { 
+        transform:rotate(-45deg);
+        transform-origin:50% 50%;
+    }
+    .open.on .bar3 { 
+        transform:translateX(6px) rotate(45deg);
+        transform-origin:100% 50%;
+        width:0px;
+    }
+    /* 햄버거를 클릭하면 기존의 depth 레이아웃이 수정되도록 */
+    #header.on .depth{
+        width:75%;
+        background-color:#00f;
+        position:absolute;
+        top:100%;
+        left:0;
+    }
+    #header .depth1 > li > .depth2{
+        width:100px;
+        height: 70px;
+        position: absolute;
+        left:50%;
+        top:-50%;
+        transition: all 0.5s;
+        background:transparent
+    }
+
+
+
+
+    /* footer부터 수정하기 */
+    #footer h4{
+        font-size:30px;
+    }
+
+}

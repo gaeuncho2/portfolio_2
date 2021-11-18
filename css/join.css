@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+} */
+
+body{
+    background-image:url('../img/sub3.jpg');
+    background-repeat:no-repeat;
+    background-position-y: -24.5%;
+}
+#joinPage .joinBox{
+    margin:180px 0 100px;
+    text-align: center;
+}
+#joinPage .joinBox h3{
+    font-weight: bold;
+    font-size:40px;
+    margin:20px;
+}
+
+.joinWrap {
+    margin:50px;
+    padding:60px;
+    border:1px solid #ccc;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    text-align: left;
+}
+
+.joinWrap .appForm{     
+    padding: 40px;
+}
+.joinWrap .appForm .info_pilsoo {
+    padding-bottom:10px; 
+    border-bottom:2px solid #000; 
+    font-size:15px;
+}
+.joinWrap .appForm .pilsoo_item{
+    font-weight: bold;
+}
+.joinWrap .appForm .pilsoo_item:before {
+    content:"*"; 
+    padding-right:8px;
+    position:relative;
+    top:4px; 
+    font-weight:bold;
+    font-size:16px;
+    color:#f00;
+}
+.joinWrap .appForm .app_list {
+    padding:15px 0;
+    border-bottom:1px solid #ddd
+}
+.joinWrap .appForm .app_list li {
+    padding:10px 0
+}
+.joinWrap .appForm .app_list li .tit_lbl { 
+    float:left;
+    width:200px;
+    line-height:42px; 
+    font-size:16px;
+} 
+.joinWrap .appForm .app_list li .app_content {
+    float:right;
+    width:770px;
+}       
+.joinWrap .appForm input[type=text],
+.joinWrap .appForm input[type=password] {
+    height:45px; 
+    border:1px solid #ccc;
+    width:100%;
+    padding:0 10px
+}
+.joinWrap .appForm textarea {
+    width:100%;
+    height:245px;
+    border:1px solid #ccc;
+    padding:10px;
+    resize:unset
+}    
+.joinWrap .appForm input.w160 {
+    width:160px
+}
+.joinWrap .appForm #email_domain {
+    background-color:#f2f2f2
+}
+.joinWrap .appForm .select_common {
+    width:160px;
+    display:inline-block;  
+    background:url(../img/ico_selectArr.png) no-repeat 100% 50%;
+}
+.joinWrap .appForm .select_common select { 
+    width:100%;
+    height:45px;
+    border:1px solid #ccc;
+    padding:10px;
+    appearance: none; 
+    background-color:transparent;
+ }
+
+
+.joinWrap .appForm .radio_area,
+.joinWrap .appForm .checkbox_area {
+    height:45px; 
+}    
+.joinWrap .appForm .css-radio + label,
+.joinWrap .appForm .css-checkbox + label 
+{ margin-right:15px; 
+    /* line-height:45px; */
+    padding-left:20px; 
+    margin-top:13px;
+    line-height:15px; 
+}
+
+.joinWrap .appForm .css-radio + label { 
+    height:15px; 
+}
+.joinWrap .appForm .tit_lbl.nopilsoo {
+    padding-left:17px;
+}
+.joinWrap .appForm .btn_a { 
+    text-align:center; 
+    padding:20px 0;
+}
+.joinWrap .appForm .btn_a button {
+    width:100px; 
+    height:50px;
+    background-color:#fff;
+    border:none;
+    border-radius: 5px;    
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-size:16px; 
+}
+.joinWrap .appForm .btn_a button:hover{
+    background-color:#D50037;
+    color:#fff;
+}
+/* 비밀번호칸 힌트 스타일 */
+.joinWrap .appForm #pwdarea { 
+    position:relative 
+}
+.joinWrap .appForm #pwdarea .pwdhint {
+    position:absolute; 
+    top:50%; 
+    left:0px; 
+    padding:15px 0 15px 10px; 
+    width:100%; 
+    font-size:14px; 
+}
+.joinWrap .appForm ::placeholder {
+    font-size:14px; 
+}
+
+/* 중복체크버튼 */
+.joinWrap .appForm .idcheck {
+    display:inline-block;
+    height:45px; line-height:45px; 
+    padding:0 10px;
+    background:#aaa;
+    border-radius:10px; 
+    font-size:14px; color:#fff; 
+}
+.joinWrap .appForm .app_content .w170 { 
+    width:170px; 
+}

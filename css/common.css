@@ -1,0 +1,314 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&family=Noto+Sans+KR&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans KR', sans-serif; */
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-X:hidden
+}
+.row{
+    max-width:1400px;
+    margin:0 auto;
+}
+
+#menuNow{
+    position:fixed;
+    left:0;
+    top:0%;
+    z-index:9999;
+}
+#menuNow li {
+    width:5px;
+    height:33.33vh;
+    background-color:#555;
+    transition:all 0.5s;
+}
+#menuNow li.on{
+    background-color: #D50037;
+}
+
+.goTop{
+    width:50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:#A50037;
+    position: fixed;
+    bottom:100px;
+    right: 100px;
+    font-size:40px;
+    text-align: center;
+    vertical-align: middle;
+    color:#fff;
+    cursor: pointer;
+}
+.goTop a{
+    margin-top:-10px;
+}
+
+.introAni {
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background:#fff;
+    font-size:100px;
+    color:#fff;
+    z-index:9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.introAni .introImg{
+    position: absolute;
+    bottom:40%;
+    left:51%;
+    transform: translateX(-50%);
+    width:200px;
+}
+.introAni .introSubs{
+    display: flex;
+    align-items: flex-end;
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform: translateX(-50%);
+    width:100px;
+}
+.introAni .introSubs > div{
+    margin:0 10px;
+}
+.introAni .introSubs > div:nth-child(1){
+    animation:steam 1s ease-in-out infinite;
+}
+.introAni .introSubs > div:nth-child(2){
+    animation:steam 1s ease-out infinite;
+}
+@keyframes steam{
+    0%{ 
+        transform:translateY(10px);
+        opacity: 1; 
+    }
+    100%{
+        transform:translateY(0);
+        opacity: 0; 
+    }
+}
+@keyframes cup{
+    0%{ 
+        transform:translateY(10px);
+        opacity: 1; 
+    }
+    100%{
+        transform:translateY(0);
+        opacity: 1; 
+    }
+}
+
+/* --------- Header ----------*/
+#header{
+    position: fixed;
+    top:10%;
+    left:10%;
+    z-index: 9999;
+}
+#header .logo h1{
+    font-weight: bold;
+    font-size:45px;
+}
+#header .depth {
+    width:200px;
+    color:#000;
+    font-weight: 500;
+    font-size:24px;
+    margin:70px 0 20px;
+    position: relative;
+}
+#header .depth span{
+    font-size:20px;
+    cursor:pointer;
+    transition:all 0.4s;
+}
+#header .depth ul{
+    position: absolute;
+    top:100%;
+    left:0;
+    width:100%;
+    padding:10px;
+    color:#000;
+    display: none;
+    margin:20px 0;
+    font-size:18px;
+}
+#header .depth.on ul{
+    opacity: 1;
+}
+#header .depth1 > li{
+    position: relative;
+    padding:15px;
+    margin:10px 0;
+    background:transparent;
+}
+#header .depth1 > li:hover{
+    background:#eee;
+    color:#D50037
+}
+#header .depth1 > li > .depth2{
+    width:100px;
+    height: 70px;
+    position: absolute;
+    left:50%;
+    top:-50%;
+    transition: all 0.5s;
+    background:transparent
+}
+#header .depth1 > li > .depth2.on{
+    display:block
+}
+#header .depth1 > li > .depth2 > li{
+    margin:10px 15px;
+}
+#header .depth1 > li > .depth2 > li:hover{
+    color:#D50037
+}
+
+#header .member{
+    position: absolute;
+    bottom:0;
+    right:0;
+    margin:25px 0;
+}
+#header .member .util{
+    display: flex;
+    align-items: center;
+}
+#header .member .util li a{
+    margin-right:15px;
+    padding:10px 15px 10px 0;
+    position: relative;
+}
+#header .member .util li a:nth-child(1)::after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:0px;
+    height: 2px;
+    background-color:#000;
+    transition: all 0.5s;
+}
+#header .member .util li a:nth-child(1):hover::after{
+    width:50px;
+}
+#header .member .util li a:nth-child(2)::after{
+    content:'';
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:0px;
+    height: 2px;
+    background-color:#000;
+    transition: all 0.5s;
+}
+#header .member .util li a:nth-child(2):hover::after{
+    width:30px;
+}
+
+#header.on {
+    position: fixed;
+    top:40px;
+    width:100%;
+    display: flex;
+    justify-content:space-between;
+    align-items:center
+}
+#header.on .depth{
+    position:static;
+    margin:0;
+}
+#header.on .depth ul{
+    top:50%;
+    left:52%;
+    width:15%;
+    background-color: #fff;
+}
+#header.on .depth1 > li{
+    background:transparent;
+}
+#header.on .depth1 > li:hover{
+    background:#eee;
+}
+#header.on .depth1 > li > .depth2{
+    display: none;
+}
+/* #header.on .depth span{
+    display: none;
+} */
+
+#header.on .member{
+    position: static;
+}
+
+/* --------- Footer ----------*/
+#footer{
+    clear:both;
+    background: #555;
+    color:#fff;
+    padding:60px;
+    text-align:center
+}
+#footer  h4{
+    font-size:40px;
+    font-weight:bold;
+}
+#footer .footFirst{
+    display:flex;
+    margin-bottom:20px;
+}
+#footer .contact{
+    width:50%;
+}
+#footer .contact h4{
+    margin-bottom:15px;
+}
+#footer .contact p{
+    font-size:14px;
+    margin-bottom:15px;
+}
+#footer .sns{
+    width:50%;
+}
+#footer .sns h4{
+    position: relative;
+}
+
+#footer .sns a{
+    transition:all 0.3s
+}
+#footer .sns a:hover{
+    color:#A50037;
+    text-shadow:4px 4px 1px #fff;
+}
+#footer .snsList{
+    display:flex;
+    justify-content:center;
+    padding:20px;
+    margin-top:10px;
+}
+#footer .snsList li{
+    margin:0 30px;
+    font-size:36px;
+}
+#footer .law{
+    font-size:14px;
+    margin-bottom:10px;
+}
+#footer .law strong{
+    font-weight: bold;
+}
+#footer .info{
+    font-size:12px;
+}

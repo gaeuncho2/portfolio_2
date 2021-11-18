@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+body{
+    background-image:url('../img/sub3.jpg');
+    background-repeat:no-repeat;
+    background-position-y: -42%;
+}
+#loginPage .loginBox{
+    margin:180px 0 100px;
+    text-align: center;
+}
+#loginPage .loginBox h3{
+    font-weight: bold;
+    font-size:40px;
+    margin:20px;
+}
+
+.loginWrap {
+    margin:50px;
+    padding:40px;
+    border:1px solid #ccc;
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+.loginForm {
+    padding:50px;
+    position: relative;
+}
+.loginForm p{
+    margin-bottom:15px;
+}
+.loginForm label{
+    width:80px;
+    font-size:16px;
+    text-align: left;
+}
+.loginBox .loginForm input{
+    border:1px solid #c6c6c6;
+    height: 30px;
+}
+.loginBox .loginForm button{
+    width:250px;
+    height:50px;
+    background-color:#fff;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color:#000;
+    font-weight: bold;
+    position:absolute;
+    top:85%;
+    left: 50%;
+    transform:translateX(-50%)
+}
+.loginBox .loginForm button span:nth-child(2){
+    display:none
+}
+.loginBox .loginForm button:hover{
+    color:#fff;
+    background-color:#D50037
+}
+.loginBox .loginForm button:hover span:nth-child(2){
+    display: block;
+}
+.loginBox .loginForm button:hover span:nth-child(1){
+    display: none;
+}
+
+.loginWrap .login_list {
+    width:250px; 
+    margin:50px auto 0;
+}
+.loginWrap .login_list li a {
+    display:block;
+    height:54px; line-height:54px;
+    text-align:center; 
+    background-repeat:no-repeat;
+    background-size:45px 45px;
+    background-position:10px center;
+    border-radius:5px; 
+    color:#fff;
+    margin:10px 0; 
+    padding-left:30px; 
+}
+.loginWrap .login_list li:nth-child(1) a {
+    background-image:url(../img/ico_kakao.png);
+    background-color:#ffea26; color:#000;
+}
+.loginWrap .login_list li:nth-child(2) a {
+    background-image:url(../img/ico_naver.png);
+    background-color:#00c300
+}
+.loginWrap .login_list li:nth-child(3) a {
+    background-image:url(../img/ico_face.png);
+    background-color:#405ea9
+}
